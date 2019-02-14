@@ -15306,6 +15306,11 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.tipo-nav {
+  font-size: 23px;
+  font-family: Poppins, sans-serif;
+}
+
 .taille-nav {
   font-size: 12px;
 }
@@ -15348,7 +15353,7 @@ h3 {
 }
 
 .ecriture-nav {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: Source Sans Pro, sans-serif;
 }
 
 .taille-titre {
@@ -15370,5 +15375,118 @@ h3 {
 .taille-sale {
   font-size: 10px;
 }
+
+.couleur-prix {
+  font-family: Poppins, sans-serif;
+  color: #cd544e;
+}
+
+.taille-ti {
+  font-size: 23px;
+  font-family: Poppins, sans-serif;
+}
+
+.ptop5 {
+  padding-top: 80px;
+}
+
+.pbottom5 {
+  padding-bottom: 60px;
+}
+
+.bg-fond-discover {
+  background: url("./../../images/products_mini/cta-bg.jpg") no-repeat center center fixed;
+  height: 800px;
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  border: none;
+  /* webkit-background-size: cover */
+  /* moz-background-size: cover */.dflex */
+  display: flex;
+  align-items: center;
+  /* o-background-size: cover */
+  /* background-size: cover */
+}
+
+#photo-carousel {
+  /* The colour of the indicators */
+}
+#photo-carousel .blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -40px;
+}
+#photo-carousel .blog .carousel-indicators li {
+  background: #a3a3a3;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+#photo-carousel .blog .carousel-indicators .active {
+  background: #707070;
+}
+
+.fond-gris {
+  background-color: #f3f2f3;
+}
+
+.fond-rouge {
+  background-color: #ca544e;
+}
+
+.bg-foot {
+  background-color: #262626;
+  height: 400px;
+}
+
+.image-ul {
+  list-style-image: url("./../../images/ul-image.png");
+}
+
+.border-dessous {
+  border-bottom: solid 1px #607574;
+}
+
+.border-r {
+  border-right: solid 1px #607574;
+}
+
+.taille-tipo {
+  font-size: 10px;
+}
+
+.dernier-bg {
+  background-color: #121212;
+  height: 110px;
+}
+
+.taille-2020 {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 15px;
+}
+
+/* .card
+ *  position: relative
+ *  overflow: hidden
+ *
+ *  .bodyCard
+ *    position: absolute
+ *    height: 25%
+ *    left: 0
+ *    right: 0
+ *    bottom: -35%
+ *    transition: 0.5s
+ * .card:hover .bodyCard 
+ *  bottom: 0
+ * .card:hover 
+ *  img 
+ *    transform: scale(1.1)
+ *    transition: 0.5s */
 
 /*# sourceMappingURL=style.css.map */
