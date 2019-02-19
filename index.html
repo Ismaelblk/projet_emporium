@@ -8,17 +8,20 @@
     <title>Projet Js SIte Web</title>
   </head>
   <body>
-    <!-- NAVBAR -->
+   
+   
+   
+           <!-- DEBUT DE  NAVBAR -->
 
-    <section>
+    <section id="nav-nav">
       <div class="container-fluid">
         <h1 class="text-center p-top taille-h1">
           <strong> emporium. </strong>
         </h1>
 
-        <nav class="navbar navbar-expand-lg navbar-light m-top mb-4 ">
-          <a class="navbar-brand tipo-nav" href="#"
-            ><strong> emporium. </strong></a
+        <nav class="navbar navbar-expand-lg navbar-light mb-4 scrol-blanc">
+          <a class="navbar-brand tipo-nav b" href="#"
+            ><strong id="empo" class="d-none"> emporium. </strong></a
           >
 
           <button
@@ -34,12 +37,12 @@
           </button>
 
           <div
-            class="collapse navbar-collapse justify-content-center "
+            class="collapse navbar-collapse justify-content-center"
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav taille-nav m-left ecriture-nav ">
               <li class="nav-item active mr-5 ">
-                <a class="nav-link" href="#"
+                <a class="nav-link active" href="#"
                   >HOME <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -67,24 +70,94 @@
               </div>
             </ul>
           </div>
-          <button type="button" class="btn btn-dark mr-1"></button
+          <button type="button" class="btn btn-dark mr-1 border-white"></button
           ><button
             type="button"
-            class="btn btn-light border border-dark mr-2"
+            class="btn btn-light border border-dark mr-2 "
           ></button>
           <button type="button" class="btn btn-dark">Connexion</button>
         </nav>
       </div>
     </section>
 
-    <!-- PREMIERE SECTION -->
+               <!-- FIN DE NAVBAR -->
+
+
+
+
+
+     
+       <!-- DEBUT DE  MODAL FORMULAIRE POUR JS -->
+
+    <div id="myModal" class="formulaire">
+
+
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          
+                  <!-- Connexion -->
+          <div id="form">
+              <button  class="btn btn-danger mb-5 " id="btn-connexion">Connexion</button>
+              <button  class="btn btn-dark mb-5  " id="btn-inscription" >Inscription</button>
+              <div class="form-group row">
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Mot de pass</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Mot de pass">
+                </div>
+              </div>
+            
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <button  class="btn btn-success" id="btn-submit">Valider</button>
+                </div>
+              </div>
+            </div>
+             <!-- Incription -->
+          <div class="inscription mx-auto my-3 flex-column " id="2eme-form">
+              <button class="btn btn-dark mb-5"  id="button-inscription">Inscription</button>
+              <button class="btn btn-danger mb-5" id="button-connexion">Connexion</button>
+              <div class="d-flex justify-content-center">
+                <input type="text" placeholder="Nom" class="mb-3 mr-3" />
+                <input type="text" placeholder="Prénom" class="mb-3 mr-3" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <input type="text" placeholder="Age" class="mb-3 mr-3" />
+                <input type="text" placeholder="Email" class="mb-3 mr-3" />
+              </div>
+              <input
+                type="password"
+                placeholder="Mot de passe"
+                class="mx-auto mb-3"
+              />
+              <button class="btn btn-success">Valider</button>
+              
+              
+            </div>
+
+
+
+        </div>
+      
+      </div>
+      <!-- FIN DE  MODAL FORMULAIRE POUR JS -->
+
+
+
+    <!-- DEBUT DE LA PREMIERE SECTION AVEC LOGO TEE-SHIRT -->
 
     <section class="couleur-section ">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 des-text">
+          <div class="col-lg-md-6 des-text">
             <span class="couleur-span"> Shop at </span>
-            <h1 class="taille-titre"><strong> emporium. </strong></h1>
+            <h1 class="taille-titre testTitre"><strong> emporium. </strong></h1>
 
             <div>
               <p class="couleur-p-gris ecriture-p">
@@ -99,9 +172,9 @@
               SALE ITEMS
             </button>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-md-6">
             <img
-              class="img-droite"
+              class="img-droite tailleImg "
               src="./images/slider-1.jpg"
               height="715px"
               width="577px"
@@ -112,7 +185,11 @@
       </div>
     </section>
 
-    <!-- NOUVELLE SECTION LIVING ROOM -->
+    <!-- DEBUT DE LA PREMIERE SECTION AVEC LOGO TEE-SHIRT -->
+
+
+
+    <!-- DEBUT DE LA  NOUVELLE SECTION LIVING ROOM AVEC LES CARDS -->
 
     <div class="container-fluid pbottom5">
       <div class="row pt-4">
@@ -167,12 +244,18 @@
       </div>
     </div>
 
-    <!-- LES CARDS ET LES ARTICLES ET LEURS PRIX LUXURY SOFA -->
+    <!-- FIN DE LA  NOUVELLE SECTION LIVING ROOM AVEC LES CARDS -->
+
+
+
+    <!-- DEBUT DES CARDS ET LES ARTICLES ET LEURS PRIX LUXURY SOFA -->
 
     <h1 class="text-center pt-5 taille-ti">
       <strong> Recent Products</strong>
     </h1>
 
+
+      <!-- premier container avec les colonnes -->
     <div class="container ptop5">
       <div class="row">
         <div class="col-lg-4">
@@ -182,6 +265,10 @@
               src="./images/products_mini/product-luxry-sofa.jpg"
               alt="Card image cap"
             />
+            <div class="row bodyCard">
+                <div class="col-6 bg-danger text-white text-center pt-4 fas fa-eye"> Vieuw Details</div>
+                <div class="col-6 bg-dark text-white text-center pt-4 fas fa-cart-plus">Add to Card</div>
+            </div>
           </div>
           <div class="card-body text-center">
             <h6><strong> Luxury Sofa </strong></h6>
@@ -194,7 +281,12 @@
               class="card-img-top"
               src="./images/products_mini/product-gloves.jpg"
               alt="Card image cap"
-            />
+              />
+                <div class="row bodyCard">
+                    <div class="col-6 bg-danger text-white text-center pt-4 fas fa-eye"> Vieuw Details</div>
+                    <div class="col-6 bg-dark text-white text-center pt-4 fas fa-cart-plus">Add to Card</div>
+                  </div>
+                </div>
             <div class="card-body text-center">
               <h6>
                 <strong>
@@ -203,7 +295,7 @@
               </h6>
               <p class="couleur-prix"><strong>$34.00 $27.00 </strong></p>
             </div>
-          </div>
+          
         </div>
         <div class="col-lg-4">
           <div class="card">
@@ -212,14 +304,21 @@
               src="./images/products_mini/product-cups.jpg"
               alt="Card image cap"
             />
+            <div class="row bodyCard">
+                <div class="col-6 bg-danger text-white text-center pt-4 fas fa-eye"> Vieuw Details</div>
+                <div class="col-6 bg-dark text-white text-center pt-4 fas fa-cart-plus">Add to Card</div>
+              </div>
+            </div>
             <div class="card-body text-center">
               <h6><strong>Colorful Bowl</strong></h6>
               <p class="couleur-prix"><strong> $18.00 </strong></p>
             </div>
-          </div>
+          
         </div>
       </div>
     </div>
+
+    <!-- deuxiemme container avec les colonnes -->
     <div class="container">
       <div class="row pt-5">
         <div class="col-lg-4">
@@ -229,11 +328,15 @@
               src="./images/products_mini/product-bag.jpg"
               alt="Card image cap"
             />
+            <div class="row bodyCard">
+                <div class="col-6 bg-danger text-white text-center pt-4 fas fa-eye"> Vieuw Details</div>
+                <div class="col-6 bg-dark text-white text-center pt-4 fas fa-cart-plus">Add to Card</div>
+              </div>
+            </div>
             <div class="card-body text-center">
               <h6><strong> Women Bag </strong></h6>
               <p class="couleur-prix"><strong> $420.00 $350.00</strong></p>
             </div>
-          </div>
         </div>
         <div class="col-lg-4">
           <div class="card">
@@ -242,11 +345,16 @@
               src="./images/products_mini/product-tshitr.jpg"
               alt="Card image cap"
             />
+            <div class="row bodyCard">
+                <div class="col-6 bg-danger text-white text-center pt-4 fas fa-eye"> Vieuw Details</div>
+                <div class="col-6 bg-dark text-white text-center pt-4 fas fa-cart-plus">Add to Card</div>
+              </div>
+            </div>
             <div class="card-body text-center">
               <h6><strong> Minimal T-Shirt </strong></h6>
               <p class="couleur-prix"><strong> $15.00</strong></p>
             </div>
-          </div>
+          
         </div>
         <div class="col-lg-4">
           <div class="card">
@@ -255,14 +363,21 @@
               src="./images/products_mini/product-plates.jpg"
               alt="Card image cap"
             />
+            <div class="row bodyCard">
+                <div class="col-6 bg-danger text-white text-center pt-4 fas fa-eye"> Vieuw Details</div>
+                <div class="col-6 bg-dark text-white text-center pt-4 fas fa-cart-plus">Add to Card</div>
+              </div>
+            </div>
             <div class="card-body text-center">
               <h6><strong>Plates Se</strong></h6>
               <p class="couleur-prix"><strong> $30.00 </strong></p>
             </div>
-          </div>
+          
         </div>
       </div>
     </div>
+
+     <!-- troisemme container avec les colonnes -->
     <div class="container">
       <div class="row pt-5">
         <div class="col-lg-4">
@@ -272,11 +387,15 @@
               src="./images/products_mini/product-modern-sofa.jpg"
               alt="Card image cap"
             />
+            <div class="row bodyCard">
+                <div class="col-6 bg-danger text-white text-center pt-4 fas fa-eye"> Vieuw Details</div>
+                <div class="col-6 bg-dark text-white text-center pt-4 fas fa-cart-plus">Add to Card</div>
+              </div>
+            </div>
             <div class="card-body text-center">
               <h6><strong> Modern Sofa </strong></h6>
               <p class="couleur-prix"><strong> $900.00</strong></p>
             </div>
-          </div>
         </div>
         <div class="col-lg-4">
           <div class="card">
@@ -285,11 +404,15 @@
               src="./images/products_mini/product-bed.jpg"
               alt="Card image cap"
             />
+            <div class="row bodyCard">
+                <div class="col-6 bg-danger text-white text-center pt-4 fas fa-eye"> Vieuw Details</div>
+                <div class="col-6 bg-dark text-white text-center pt-4 fas fa-cart-plus">Add to Card</div>
+              </div>
+            </div>
             <div class="card-body text-center">
               <h6><strong> Bed Linen </strong></h6>
               <p class="couleur-prix"><strong> $79.00 </strong></p>
             </div>
-          </div>
         </div>
         <div class="col-lg-4">
           <div class="card">
@@ -298,14 +421,23 @@
               src="./images/products_mini/product-shoes.jpg"
               alt="Card image cap"
             />
+            <div class="row bodyCard">
+              <div class="col-6 bg-danger text-white text-center pt-4 fas fa-eye"> Vieuw Details</div>
+                <div class="col-6 bg-dark text-white text-center pt-4 fas fa-cart-plus">Add to Card</div>
+              </div>
+            </div>
             <div class="card-body text-center">
               <h6><strong> Minimal Shoes </strong></h6>
               <p class="couleur-prix"><strong> $60.00 </strong></p>
             </div>
-          </div>
         </div>
       </div>
     </div>
+
+    <!-- FIN  DES CARDS ET LES ARTICLES ET LEURS PRIX LUXURY SOFA -->
+
+
+
 
     <!-- DEBUT DE SECTION Discover Thousands -->
 
@@ -324,7 +456,11 @@
       </div>
     </section>
 
-    <!-- CAROUSEL PETITE PHOTO -->
+    <!-- FIN DE SECTION Discover Thousands -->
+
+
+
+    <!-- DEBUT DU CAROUSEL PETITE PHOTO -->
 
     <section id="photo-carousel">
       <div class="container">
@@ -352,13 +488,17 @@
                           src="./images/products_mini/product-gloves.jpg"
                           alt="Card image cap"
                         />
+                        <div class="row bodyCard">
+                          <div class="col-6 bg-danger text-white text-center pt-3 fas fa-eye"> Vieuw Details</div>
+                            <div class="col-6 bg-dark text-white text-center pt-3 fas fa-cart-plus ">Add to Card</div>
+                          </div>
+                        </div>
                         <div class="card-body text-center">
                           <h6><strong> Leather Gloves </strong></h6>
                           <p class="couleur-prix">
                             <strong>$34.00 $27.00</strong>
                           </p>
                         </div>
-                      </div>
                     </div>
                     <div class="col-md-3">
                       <div class="card">
@@ -367,13 +507,17 @@
                           src="./images/products_mini/product-bag.jpg"
                           alt="Card image cap"
                         />
+                        <div class="row bodyCard">
+                            <div class="col-6 bg-danger text-white text-center pt-3 fas fa-eye"> Vieuw Details</div>
+                            <div class="col-6 bg-dark text-white text-center pt-3 fas fa-cart-plus">Add to Card</div>
+                          </div>
+                        </div>
                         <div class="card-body text-center">
                           <h6><strong> Women Bag </strong></h6>
                           <p class="couleur-prix">
                             <strong> $420.00 $350.00</strong>
                           </p>
                         </div>
-                      </div>
                     </div>
                     <div class="col-md-3">
                       <div class="card">
@@ -382,11 +526,15 @@
                           src="./images/products_mini/product-tshitr.jpg"
                           alt="Card image cap"
                         />
+                        <div class="row bodyCard">
+                          <div class="col-6 bg-danger text-white text-center pt-3 fas fa-eye"> Vieuw Details</div>
+                            <div class="col-6 bg-dark text-white text-center pt-3 fas fa-cart-plus">Add to Card</div>
+                          </div>
+                        </div>
                         <div class="card-body text-center">
                           <h6><strong> Minimal T-Shirt </strong></h6>
                           <p class="couleur-prix"><strong> $15.00</strong></p>
                         </div>
-                      </div>
                     </div>
                     <div class="col-md-3">
                       <div class="card">
@@ -395,11 +543,15 @@
                           src="./images/products_mini/product-plates.jpg"
                           alt="Card image cap"
                         />
+                        <div class="row bodyCard">
+                            <div class="col-6 bg-danger text-white text-center pt-3 fas fa-eye"> Vieuw Details</div>
+                            <div class="col-6 bg-dark text-white text-center pt-3 fas fa-cart-plus">Add to Card</div>
+                          </div>
+                        </div>
                         <div class="card-body text-center">
                           <h6><strong>Plates Se</strong></h6>
                           <p class="couleur-prix"><strong> $30.00 </strong></p>
                         </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -412,11 +564,15 @@
                           src="./images/products_mini/product-cups.jpg"
                           alt="Card image cap"
                         />
+                        <div class="row bodyCard">
+                            <div class="col-6 bg-danger text-white text-center pt-3 fas fa-eye"> Vieuw Details</div>
+                            <div class="col-6 bg-dark text-white text-center pt-3 fas fa-cart-plus">Add to Card</div>
+                          </div>
+                        </div>
                         <div class="card-body text-center">
                           <h6><strong> Bed Linen </strong></h6>
                           <p class="couleur-prix"><strong> $79.00 </strong></p>
                         </div>
-                      </div>
                     </div>
                     <div class="col-md-3">
                       <div class="card">
@@ -425,11 +581,15 @@
                           src="./images/products_mini/product-modern-sofa.jpg"
                           alt="Card image cap"
                         />
+                        <div class="row bodyCard">
+                            <div class="col-6 bg-danger text-white text-center pt-3 fas fa-eye"> Vieuw Details</div>
+                            <div class="col-6 bg-dark text-white text-center pt-3 fas fa-cart-plus">Add to Card</div>
+                          </div>
+                        </div>
                         <div class="card-body text-center">
                           <h6><strong> Modern Sofa </strong></h6>
                           <p class="couleur-prix"><strong> $900.00</strong></p>
                         </div>
-                      </div>
                     </div>
                     <div class="col-md-3">
                       <div class="card">
@@ -438,11 +598,15 @@
                           src="./images/products_mini/product-shoes.jpg"
                           alt="Card image cap"
                         />
+                        <div class="row bodyCard">
+                          <div class="col-6 bg-danger text-white text-center pt-3"> Vieuw Details</div>
+                            <div class="col-6 bg-dark text-white text-center pt-3 ">Add to Card</div>
+                          </div>
+                        </div>
                         <div class="card-body text-center">
                           <h6><strong> Minimal Shoes </strong></h6>
                           <p class="couleur-prix"><strong> $60.00 </strong></p>
                         </div>
-                      </div>
                     </div>
                     <div class="col-md-3">
                       <div class="card">
@@ -451,11 +615,15 @@
                           src="./images/products_mini/product-bed.jpg"
                           alt="Card image cap"
                         />
+                        <div class="row bodyCard">
+                          <div class="col-6 bg-danger text-white text-center pt-3"> Vieuw Details</div>
+                            <div class="col-6 bg-dark text-white text-center pt-3 ">Add to Card</div>
+                          </div>
+                        </div>
                         <div class="card-body text-center ">
                           <h6><strong> Bed Linen </strong></h6>
                           <p class="couleur-prix"><strong> $79.00 </strong></p>
                         </div>
-                      </div>
                     </div>
                   </div>
                   <!--.row-->
@@ -469,8 +637,10 @@
         </div>
       </div>
     </section>
+     <!-- DEBUT DU CAROUSEL PETITE PHOTO -->
 
-    <!-- SECTION AVEC LES 3 CARDS ET LES FONTAWSOM VERY FAST SHIPPING -->
+
+    <!-- DEBUT SECTION AVEC LES 3 CARDS ET LES FONTAWSOM VERY FAST SHIPPING -->
 
     <section>
       <div class="container-fluid">
@@ -544,13 +714,15 @@
         </div>
       </div>
     </section>
+     <!-- FIN SECTION AVEC LES 3 CARDS ET LES FONTAWSOM VERY FAST SHIPPING -->
 
-    <!-- FOOTER AVEC 3 COLONNES -->
+
+    <!-- DEBUT  FOOTER AVEC 3 COLONNES -->
 
     <footer class="bg-foot pt-5 mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 border-r pt-4 ">
+      <div class="container  ">
+        <div class="row size-text">
+          <div class="col-lg-4 col-sm-12 border-r pt-4 ">
             <h6 class="text-white ">ABOUT US</h6>
             <p class="text-muted pt-5">
               A wonderful serenity has taken possession of my entire soul, like
@@ -559,11 +731,11 @@
               was created for the bliss of
             </p>
           </div>
-          <div class="col-lg-4 border-r pt-4">
+          <div class="col-lg-4 col-sm-12 border-r pt-4">
             <h6 class="text-white">RECENT POSTS</h6>
             <ul class="text-muted image-ul pt-5 ">
               <li class="border-dessous pb-2"><a href=""></a>Hello Word!</li>
-              <li class="border-dessous p2-3 pt-3">
+              <li class="border-dessous pb-3 pt-3">
                 <a href=""></a>Wonderful serenity has taken
               </li>
               <li class="border-dessous pt-3 pb-2">
@@ -574,7 +746,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-4 pt-4">
+          <div class="col-lg-4 col-sm-12 pt-4 ">
             <h6 class="text-white">TAG CLOUD</h6>
             <button
               type="button"
@@ -641,11 +813,15 @@
       </div>
     </footer>
 
-    <section class="dernier-bg pt-5">
+      <!-- petite section avec background -->
+      
+    <section class="dernier-bg pt-5 pb-3 size-text">
       <p class="text-center text-muted taille-2020">
         COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED
       </p>
     </section>
+
+    <!-- FIN  FOOTER AVEC 3 COLONNES -->
 
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/popper.js/dist/popper.js"></script>

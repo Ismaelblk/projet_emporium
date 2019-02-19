@@ -1,0 +1,26 @@
+.bg-foot {
+  background-color: #262626;
+}
+
+.border-dessous {
+  border-bottom: solid 1px #607574;
+}
+
+.border-r {
+  border-right: solid 1px #607574;
+}
+
+.taille-tipo {
+  font-size: 10px;
+}
+
+.dernier-bg {
+  background-color: #121212;
+}
+
+.taille-2020 {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=footer.css.map */

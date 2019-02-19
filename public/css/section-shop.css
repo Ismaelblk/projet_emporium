@@ -1,0 +1,44 @@
+.taille-h1 {
+  font-size: 30px;
+}
+
+.couleur-section {
+  background-color: #f3f2f3;
+}
+
+.img-droite {
+  float: right;
+}
+
+.couleur-btn {
+  background-color: #ca544e;
+}
+
+.arrondi-btn {
+  border-radius: 40px;
+}
+
+.des-text {
+  padding-left: 100px;
+  margin-top: 200px;
+}
+
+.m-left {
+  margin-left: 50px;
+}
+
+.taille-titre {
+  font-size: 100px;
+}
+
+.couleur-span {
+  font-size: 40px;
+  color: #ca544e;
+}
+
+.couleur-p-gris {
+  color: #a9a9a9;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=section-shop.css.map */
