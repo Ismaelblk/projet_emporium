@@ -15612,3 +15612,7 @@ h3 {
 }
 
 /*# sourceMappingURL=style.css.map */
+html {
+  scroll-behavior: smooth;
+
+}
