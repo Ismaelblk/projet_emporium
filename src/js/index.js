@@ -68,6 +68,7 @@ window.onscroll = function() {
     
   } else {
     document.querySelector(".navbar").classList.remove("fixed-top");
+    recuperationStrong2.classList.add("d-none");
   }
 };
  

@@ -21,7 +21,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light mb-4 scrol-blanc">
           <a class="navbar-brand tipo-nav b" href="#"
-            ><strong id="empo" class="d-none"> emporium. </strong></a
+            ><strong id="empo" class="d-none size-empo ml-5"> emporium. </strong></a
           >
 
           <button
@@ -75,7 +75,7 @@
             type="button"
             class="btn btn-light border border-dark mr-2 "
           ></button>
-          <button type="button" class="btn btn-dark">Connexion</button>
+          <button type="button" class="btn btn-dark centrer-btn">Connexion</button>
         </nav>
       </div>
     </section>
@@ -120,25 +120,56 @@
               </div>
             </div>
              <!-- Incription -->
-          <div class="inscription mx-auto my-3 flex-column " id="2eme-form">
-              <button class="btn btn-dark mb-5"  id="button-inscription">Inscription</button>
-              <button class="btn btn-danger mb-5" id="button-connexion">Connexion</button>
-              <div class="d-flex justify-content-center">
-                <input type="text" placeholder="Nom" class="mb-3 mr-3" />
-                <input type="text" placeholder="Prénom" class="mb-3 mr-3" />
-              </div>
-              <div class="d-flex justify-content-center">
-                <input type="text" placeholder="Age" class="mb-3 mr-3" />
-                <input type="text" placeholder="Email" class="mb-3 mr-3" />
-              </div>
-              <input
-                type="password"
-                placeholder="Mot de passe"
-                class="mx-auto mb-3"
-              />
-              <button class="btn btn-success">Valider</button>
+          <div class="inscription  my-3 " id="2eme-form">
+              <button class="btn btn-danger mb-5"  id="button-inscription">Inscription</button>
+              <button class="btn btn-dark mb-5" id="button-connexion">Connexion</button>
+             
+                <div class="form-group row">
+  
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Nom</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputNom3" placeholder="Nom">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Prénom</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPrenom3" placeholder="Prénom">
+                  </div>
+                </div>
+                <div class="form-group row">
+  
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputAge3" placeholder="Age">
+                  </div>
+                </div>
+                <div class="form-group row">
+  
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmaill3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Mot de pass</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPasswordd3" placeholder="Mot de pass">
+                  </div>
+                </div>
               
-              
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <button  class="btn btn-success" id="btn-submit">Valider</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
             </div>
 
 
@@ -155,9 +186,9 @@
     <section class="couleur-section ">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-md-6 des-text">
+          <div class="col-lg-6 des-text">
             <span class="couleur-span"> Shop at </span>
-            <h1 class="taille-titre testTitre"><strong> emporium. </strong></h1>
+            <h1 class="taille-titre testTitre"> emporium.</h1>
 
             <div>
               <p class="couleur-p-gris ecriture-p">
@@ -172,7 +203,7 @@
               SALE ITEMS
             </button>
           </div>
-          <div class="col-lg-md-6">
+          <div class="col-lg-6">
             <img
               class="img-droite tailleImg "
               src="./images/slider-1.jpg"
@@ -293,7 +324,7 @@
                   Leather Gloves
                 </strong>
               </h6>
-              <p class="couleur-prix"><strong>$34.00 $27.00 </strong></p>
+              <p class="couleur-prix"><strong> $27.00 </strong></p>
             </div>
           
         </div>
@@ -335,7 +366,7 @@
             </div>
             <div class="card-body text-center">
               <h6><strong> Women Bag </strong></h6>
-              <p class="couleur-prix"><strong> $420.00 $350.00</strong></p>
+              <p class="couleur-prix"><strong> $350.00</strong></p>
             </div>
         </div>
         <div class="col-lg-4">
@@ -464,7 +495,7 @@
 
     <section id="photo-carousel">
       <div class="container">
-        <h3 class="text-center pt-5"><strong>Hot Fashion Products</strong></h3>
+        <h3 class="text-center pt-5 taille-ti"><strong>Hot Fashion Products</strong></h3>
         <div class="row blog pt-5 pb-5">
           <div class="col-md-12">
             <div id="blogCarousel" class="carousel slide" data-ride="carousel">
@@ -486,21 +517,23 @@
                         <img
                           class="card-img-top"
                           src="./images/products_mini/product-gloves.jpg"
-                          alt="Card image cap"
-                        />
+                          alt="Card image cap" class="form-group row" >
+  
+                          
+                          </div>
+                        
                         <div class="row bodyCard">
                           <div class="col-6 bg-danger text-white text-center pt-3 fas fa-eye"> Vieuw Details</div>
                             <div class="col-6 bg-dark text-white text-center pt-3 fas fa-cart-plus ">Add to Card</div>
                           </div>
-                        </div>
                         <div class="card-body text-center">
                           <h6><strong> Leather Gloves </strong></h6>
                           <p class="couleur-prix">
                             <strong>$34.00 $27.00</strong>
                           </p>
                         </div>
-                    </div>
-                    <div class="col-md-3">
+                     </div>
+                     <div class="col-md-3">
                       <div class="card">
                         <img
                           class="card-img-top"
@@ -553,9 +586,10 @@
                           <p class="couleur-prix"><strong> $30.00 </strong></p>
                         </div>
                     </div>
+                    </div>
                   </div>
-                </div>
-                <div class="carousel-item">
+<!--                 </div>
+ -->                <div class="carousel-item">
                   <div class="row">
                     <div class="col-md-3">
                       <div class="card">
@@ -650,19 +684,19 @@
               <div class="card-body color-card1-3">
                 <i class="fas fa-2x fa-check-circle pt-4"></i>
                 <h5 class="card-title pt-5">
-                  <strong>
+                  <strong class="taille-titre-shipping">
                     TRSUTED BY 10,000+ <br />
                     CUSTOMERS</strong
                   >
                 </h5>
-                <p class="card-text pt-5">
+                <p class="card-text pt-5 text-muted">
                   Far far away, behind the word <br />
                   mountains, far from the countries <br />
                   Vokalia and Consonantia, there <br />
                   live the blind texts.
                 </p>
-                <a href="#" class="btn btn-dark mt-5"
-                  ><strong>LEARN MORE</strong></a
+                <a href="#" class="btn btn-dark mt-5 agrandir-btn-learn"
+                  ><strong class="taille-btn-learn">LEARN MORE</strong></a
                 >
               </div>
             </div>
@@ -670,11 +704,11 @@
           <div class="col-lg-4">
             <div class="card fond-rouge">
               <div class="card-body color-card2 text-white">
-                <i class="fas fa-2x fa-paper-plane pt-4"></i>
+                <i class="fas fa-3x fa-paper-plane pt-4"></i>
                 <h5 class="card-title pt-5">
-                  <strong>
-                    TRSUTED BY 10,000+ <br />
-                    CUSTOMERS</strong
+                  <strong class="taille-titre-shipping">
+                    VERY FAST SHIPPING <br />
+                    </strong
                   >
                 </h5>
                 <p class="card-text pt-5">
@@ -683,8 +717,8 @@
                   Vokalia and Consonantia, there <br />
                   live the blind texts.
                 </p>
-                <a href="#" class="btn btn-light mt-5"
-                  ><strong>LEARN MORE</strong></a
+                <a href="#" class="btn btn-light mt-5 agrandir-btn-learn"
+                  ><strong class="taille-btn-learn">LEARN MORE</strong></a
                 >
               </div>
             </div>
@@ -694,19 +728,19 @@
               <div class="card-body color-card1-3">
                 <i class="fas fa-2x fa-check-circle pt-4"></i>
                 <h5 class="card-title pt-5">
-                  <strong>
+                  <strong class="taille-titre-shipping">
                     TRSUTED BY 10,000+ <br />
                     CUSTOMERS</strong
                   >
                 </h5>
-                <p class="card-text pt-5">
+                <p class="card-text pt-5 text-muted">
                   Far far away, behind the word <br />
                   mountains, far from the countries <br />
                   Vokalia and Consonantia, there <br />
                   live the blind texts.
                 </p>
-                <a href="#" class="btn btn-dark mt-5"
-                  ><strong>LEARN MORE</strong></a
+                <a href="#" class="btn btn-dark mt-5 agrandir-btn-learn"
+                  ><strong class="taille-btn-learn">LEARN MORE</strong></a
                 >
               </div>
             </div>
@@ -723,88 +757,99 @@
       <div class="container  ">
         <div class="row size-text">
           <div class="col-lg-4 col-sm-12 border-r pt-4 ">
-            <h6 class="text-white ">ABOUT US</h6>
-            <p class="text-muted pt-5">
-              A wonderful serenity has taken possession of my entire soul, like
-              these sweet mornings of spring which I enjoy with my whole heart.
-              I am alone, and feel the charm of existence in this spot, which
+            <h6 class="text-white tipo-footer-h6 taille-h6 ">ABOUT US</h6>
+            <p class="text-foot pt-4 tipo-footer">
+              A wonderful serenity has taken possession of my <br>
+               entire soul, like
+              these sweet mornings of spring <br>
+               which I enjoy with my whole heart.
+              I am alone, and  <br>
+              feel the charm of existence in this spot, which
               was created for the bliss of
             </p>
           </div>
           <div class="col-lg-4 col-sm-12 border-r pt-4">
-            <h6 class="text-white">RECENT POSTS</h6>
-            <ul class="text-muted image-ul pt-5 ">
-              <li class="border-dessous pb-2"><a href=""></a>Hello Word!</li>
-              <li class="border-dessous pb-3 pt-3">
+            <h6 class="text-white tipo-footer-h6 taille-h6 ml-3">RECENT POSTS</h6>
+            <ul class="text-foot image-ul pt-4 tipo-footer ">
+              <li class="bor-dessous pb-2  tipo-footer"><a href=""></a>Hello Word!</li>
+              <li class="bor-dessous pb-3 pt-3  tipo-footer">
                 <a href=""></a>Wonderful serenity has taken
               </li>
-              <li class="border-dessous pt-3 pb-2">
+              <li class="bor-dessous pt-3 pb-2  tipo-footer">
                 <a href=""></a>In my soul and absorb its power
               </li>
-              <li class="border-dessous pt-3 pb-2">
+              <li class="bor-dessous pt-3 pb-2  tipo-footer">
                 <a href=""></a>I hear the buzz of the little
               </li>
             </ul>
           </div>
-          <div class="col-lg-4 col-sm-12 pt-4 ">
-            <h6 class="text-white">TAG CLOUD</h6>
+          <div class="col-lg-4 col-sm-12 pt-4">
+            <div class="ml-3"> 
+            <h6 class="text-white tipo-footer-h6 taille-h6 mb-4 "> TAG CLOUD <h6>
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 m-2"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 mr-2 tipo-footer  "
             >
               BUISSNESS
             </button>
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 m-2"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 mr-2 tipo-footer"
             >
               CONFERENCE
             </button>
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 m-2"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 tipo-footer"
             >
+
               GADGETS
+            </div>
+                <div class="mb-2 ml-3">       
             </button>
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 m-2"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 mr-2  tipo-footer" 
+
             >
               IDENTITY
             </button>
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 m-2"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 mr-2  tipo-footer"
             >
               LOGO
             </button>
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 mr-5"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 tipo-footer"
             >
               PHOTOGRAPHY
             </button>
+          </div>
+          <div class="mb-2 ml-3"> 
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 m-2"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 mr-2 tipo-footer"
             >
               TIM
             </button>
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 mr-3"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 mr-2  tipo-footer"
             >
               TRIPS
             </button>
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 m-3"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 tipo-footer"
             >
               WORKS
+            </div>
             </button>
             <button
               type="button"
-              class="btn btn-outline-dark text-muted taille-tipo p-2 mr-5"
+              class="btn btn-outline-dark text-foot taille-tipo pl-3 pr-3 pb-2 pt-2 ml-3 tipo-footer"
             >
               WORKS SPACE
             </button>
@@ -816,8 +861,8 @@
       <!-- petite section avec background -->
       
     <section class="dernier-bg pt-5 pb-3 size-text">
-      <p class="text-center text-muted taille-2020">
-        COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED
+      <p class="text-center text-foot taille-2020">
+        COPYRIGHT  2020  GOODLAYERS,  ALL  RIGHT  RESERVED
       </p>
     </section>
 
