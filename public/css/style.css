@@ -15434,6 +15434,10 @@ h3 {
 
 .card {
   border: none;
+}
+
+.taille-tipo-Bcard {
+  font-family: Source Sans Pro, sans-serif;
   /* webkit-background-size: cover */
   /* moz-background-size: cover */.dflex */
   display: flex;
